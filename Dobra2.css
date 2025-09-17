@@ -1,0 +1,122 @@
+.dobra2 {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 16px;
+}
+
+.title2 {
+    font-size: 24px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    line-height: 1.2;
+}
+
+.title2 span {
+    background: linear-gradient(90deg, #00b2a9, #006298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Layout desktop: lado a lado */
+.Cronograma {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+/* Títulos */
+.title_crono,
+.title_crono2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.5rem, 5vw, 56px);
+    color: #000;
+    margin: 20px 0 40px 0;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 680px;
+}
+
+.title_crono {
+    text-align: left;
+    border-left: 10px solid #00b2a9;
+}
+
+.title_crono2 {
+    text-align: right;
+    border-right: 10px solid #00b2a9;
+}
+
+/* Texto */
+.div_text {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.div_text::before {
+    content: '';
+    position: absolute;
+    inset: -50px;
+    background-image: url('./imagens/LinhaSIPAT20253.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+.list {
+    text-align: left;
+    font-size: clamp(1rem, 2.5vw, 25px);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 10px 0 20px 15px;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+/* Todas as imagens padronizadas */
+.img2,
+.img3,
+.img4 {
+    width: 600px;
+    height: 750px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .Cronograma {
+        flex-direction: column;
+        align-items: center;
+        text-align: left; /* texto alinhado à esquerda */
+    }
+
+    .title_crono,
+    .title_crono2 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .list {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .img2,
+    .img3,
+    .img4 {
+        width: 100%;
+        max-width: 600px; /* garante que não estoure */
+        height: auto;     /* mantém proporção no mobile */
+    }
+}

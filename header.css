@@ -1,0 +1,78 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;            /* ocupa toda a largura */
+    max-width: 1400px;      /* não passa de 1400px em telas grandes */
+    margin: 0 auto;         /* centraliza no desktop */
+    padding: 10px 20px;     /* respiro lateral */
+    border-bottom: transparent solid 3px;
+    box-sizing: border-box; /* evita estourar */
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0), 
+        rgba(0, 178, 169, 1), 
+        rgba(255, 255, 255, 0)
+    );
+    pointer-events: none;
+}
+
+.header_image {
+    width: clamp(120px, 15vw, 200px); /* redimensiona proporcionalmente */
+    height: auto;
+}
+
+.butao {
+    font-size: clamp(1rem, 3vw, 30px); /* escala no mobile */
+    margin-right: 15px;
+    font-weight: bold;
+    border: none;
+    background: none;
+}
+
+.butao span {
+    background: linear-gradient(90deg, #00b2a9, #006298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.butao:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.1s ease-in-out;
+}
+
+h2 {
+    font-size: clamp(1.2rem, 4vw, 40px);
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+h2 span {
+    background: linear-gradient(90deg, #00b2a9, #006298);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .butao {
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,62 @@
+.dobra4 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Mapa */
+.mapa {
+    width: 850px;
+    max-width: 90%;
+
+    border-radius: 15px;
+    margin: 0 auto 50px auto;
+    box-shadow: black 5px 5px 15px;
+    object-fit: cover;   /* garante que o conteúdo se ajuste */
+}
+
+/* Títulos */
+#mapa,
+#mapa2 {
+    font-size: clamp(2.5rem, 8vw, 90px); /* ajusta dinamicamente */
+    
+}
+
+#mapa2 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title3 {
+    margin-bottom: 30px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+    .mapa {
+        width: 90%;
+        height: auto;      /* mantém proporção */
+        max-width: 100%;
+        max-height: none;
+    }
+
+    #mapa,
+    #mapa2 {
+        text-align: center;
+        font-size: clamp(2rem, 6vw, 50px); /* menor no mobile */
+    }
+
+    .title3 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+}
