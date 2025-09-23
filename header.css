@@ -33,7 +33,7 @@ header::after {
 }
 
 .butao {
-    font-size: clamp(1rem, 3vw, 30px); /* escala no mobile */
+    font-size: clamp(1rem, 3vw, 20px); /* escala no mobile */
     margin-right: 15px;
     font-weight: bold;
     border: none;

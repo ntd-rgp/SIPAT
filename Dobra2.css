@@ -6,12 +6,13 @@
 }
 
 .title2 {
-    font-size: 24px;
+    font-size: 80px;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 900px;
     margin: 0 auto 60px auto;
     line-height: 1.2;
+     margin-bottom: 80px;
 }
 
 .title2 span {
@@ -111,7 +112,10 @@
         text-align: left;
         margin-left: 0;
     }
-
+.title2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
     .img2,
     .img3,
     .img4 {
