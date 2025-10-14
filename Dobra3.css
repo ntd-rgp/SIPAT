@@ -132,6 +132,7 @@
 
 .lista_turno{
     list-style-type: none;
+    padding-left: 0;
 }
 
 /* ---- Responsividade ---- */
