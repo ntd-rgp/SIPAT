@@ -93,6 +93,9 @@
     border-radius: 18px;
     object-fit: cover;
 }
+li{
+    margin: 12px 0;
+}
 
 /* --- MOBILE --- */
 @media (max-width: 768px) {

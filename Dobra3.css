@@ -91,6 +91,9 @@
     text-align: center;
     align-items: center;
 }
+.atividades__text{
+    font-size: 30px;
+}
 
 /* Botão pequeno dentro dos cards */
 .btnatt {
@@ -172,7 +175,7 @@
         width: 90%;
         max-width: 250px;
     }
-    .atividades h2{
-        font-size: 2.2rem;
+    .atividades__text{
+        font-size: 30px;
     }
 }
