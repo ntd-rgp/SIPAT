@@ -1,6 +1,3 @@
-/* ---- Dobra 3 ---- */
-
-/* Container dos botões grandes */
 .btn {
     display: flex;
     justify-content: center; /* centraliza horizontalmente */
