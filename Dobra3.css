@@ -1,9 +1,12 @@
+.dobra3{
+    margin-top: 60px;
+}
 .btn {
     display: flex;
     justify-content: center; /* centraliza horizontalmente */
     gap: 30px;               /* espaço menor entre os botões */
     flex-wrap: nowrap;       /* não quebra linha, sempre lado a lado */
-    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
 /* Botões de inscrição */
@@ -118,6 +121,9 @@
     scale: 1.08;
     filter: brightness(1.1);
 }
+#lorem{
+    font-size: 25px;
+}
 
 .lorem_div{
     justify-content: center;
@@ -128,15 +134,24 @@
     margin-bottom: 30px;
     border: 2px solid #000000;
     padding: 8px;
+    border-radius: 15px;
+    padding :30px 0;
+}
+h3{
+    font-size: 30px;
 }
 
-.lista_turno{
-    list-style-type: none;
-    padding-left: 0;
+.footer{
+    text-align: center;
+    font-size: 14px;
+    color: #555;
 }
 
 /* ---- Responsividade ---- */
 @media (max-width: 768px) {
+    .dobra3{
+        margin-top: 20px;
+    }
     .btn {
         flex-direction: row;   /* mantém lado a lado no mobile */
         justify-content: center;
@@ -144,23 +159,26 @@
         flex-wrap: nowrap;
     }
 
+    #lorem{
+    font-size: 16px;
+}
+
     .inscricao,
     .inscricao2 {
         width: 350px; /* menor para mobile */
         height: 220px;
     }
-
     .btntitle {
-        font-size: 40px; /* proporcional ao tamanho do botão */
+        font-size: 0px; /* proporcional ao tamanho do botão */
     }
 
     .btndisgrama {
-        width: 45%;
-        height: 90px;
+        width: 75%;
+        height: 70px;
     }
 
     .btntext {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .regras {
@@ -175,4 +193,10 @@
     .atividades__text{
         font-size: 30px;
     }
+    .lorem_div{
+    padding: 20px;
+}
+h3{
+    font-size: 25px;
+}
 }
